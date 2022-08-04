@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.red {
+  background-color: red;
+  height: 50vh;
+  width: 50%;
+  display: inline-block;
+}
+.green {
+  background-color: green;
+  height: 50vh;
+  width: 50%;
+  display: inline-block;
+}
