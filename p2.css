@@ -4,11 +4,14 @@
 }
 li {
   display: inline;
-}
+  font-size: 2vw;
+  padding: 6px 8px;
+} 
 header {
   background-color: black;
   color: white;
-  height: 12vh;
+  height: 7vh;
+  padding: 10px ;
 }
 p {
   text-align: center; border: 2px solid yellow;
@@ -28,5 +31,9 @@ top:15px;
 left: 50px;
 /* right: 20px; */
 /* bottom: 25px; */
+
+}
+
+nav{
 
 }
