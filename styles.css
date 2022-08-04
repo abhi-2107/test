@@ -8,6 +8,8 @@
   height: 50vh;
   width: 50%;
   display: inline-block;
+  /* display:none; */
+  /* visibility: hidden; */
 }
 .green {
   background-color: green;
@@ -27,10 +29,11 @@ nav ul {
 nav ul li {
   display: inline-block;
   /* background-color: lightgreen; */
-  border: 1px solid white;
+  border: 1px solid red;
   border-radius: 7px;
   padding: 1px;
   margin: 10px 12px;
+  /* box-sizing: border-box; */
 }
 nav ul li a {
   text-decoration: none;
