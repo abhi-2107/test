@@ -21,19 +21,19 @@
 
   /* all the above four transition properties can be used in single line  */
 
-  transition: width 1s ease-out 2s, height 1s ease-out 1s;
+  transition: width 1s ease-out 2s, height 5s ease-out 1s;
   /* property duration timing-function delay */
 }
 img:hover {
-  width: 800px;
-  height: 500px;
+  width: 500px;
+  height: 300px;
 }
 
 .box {
   height: 500px;
   background-color: rgb(252, 209, 144);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   /* align-items: center; */
 }
 .animation {
@@ -50,7 +50,7 @@ img:hover {
   font-size: 20px;
 
   /* now turn for the animation */
-  animation: letsAnimate 2s ease-in-out 1s 3 normal;
+  animation: letsAnimate 3s ease-in-out 1s 4 alternate;
   /* single line but can be done one by one  */
 }
 
@@ -58,10 +58,15 @@ img:hover {
 @keyframes letsAnimate {
   from {
     height: 100px;
-    width: 200px;
+    width: 100px;
   }
   to {
-    height: 400px;
-    width: 600px;
+    height: 120px;
+    width: 500px;
   }
+}
+
+.ranveer {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: letsAnimate 3s ease-out 1s 6 alternate;
 }
