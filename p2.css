@@ -2,19 +2,25 @@
   margin: 0;
   padding: 0;
 }
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 li {
   display: inline;
-  font-size: 2vw;
+  font-size: 1.5em;
   padding: 6px 8px;
-} 
+}
 header {
   background-color: black;
   color: white;
-  height: 7vh;
-  padding: 10px ;
+  height: 35px;
+  padding: 10px;
 }
 p {
-  text-align: center; border: 2px solid yellow;
+  text-align: center;
+  border: 2px solid yellow;
 }
 .container {
   background-color: rgb(118, 163, 223);
@@ -22,18 +28,16 @@ p {
   width: 50vw;
   margin: auto;
 }
-.box{
-background-color: red;  
-height: 160px;
-width: 160px;
-position: relative;
-top:15px;
-left: 50px;
-/* right: 20px; */
-/* bottom: 25px; */
-
+.box {
+  background-color: red;
+  height: 160px;
+  width: 160px;
+  position: relative;
+  top: 15px;
+  left: 50px;
+  /* right: 20px; */
+  /* bottom: 25px; */
 }
 
-nav{
-
+nav {
 }
