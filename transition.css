@@ -10,13 +10,58 @@
   height: 150px;
   width: 250px;
   border: 5px solid yellow;
-  transition-duration: 1s;
 
+  /* transform: matrix();rarely used property */
+
+  /* transition-property:width;
+  transition-duration: 1s; */
   /* transition-timing-function:ease-in;  */
-  transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68);
-  transition-delay: 2s;
+  /* transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68);
+  transition-delay: 2s; */
+
+  /* all the above four transition properties can be used in single line  */
+
+  transition: width 1s ease-out 2s, height 1s ease-out 1s;
+  /* property duration timing-function delay */
 }
 img:hover {
   width: 800px;
   height: 500px;
+}
+
+.box {
+  height: 500px;
+  background-color: rgb(252, 209, 144);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.animation {
+  background-color: crimson;
+  color: aliceblue;
+  border: 2px dashed black;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-size: 20px;
+
+  /* now turn for the animation */
+  animation: letsAnimate 2s ease-in-out 1s 3 normal;
+  /* single line but can be done one by one  */
+}
+
+/* defining what to do when animation is called */
+@keyframes letsAnimate {
+  from {
+    height: 100px;
+    width: 200px;
+  }
+  to {
+    height: 400px;
+    width: 600px;
+  }
 }
