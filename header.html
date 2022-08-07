@@ -32,7 +32,9 @@
       }
       main {
         background-color: wheat;
-        height: 505px;
+        /* height: 505px; */
+        /* this function is setting the height by calculating footer and header */
+        min-height: calc(100vh - 8vh - 11vh);
       }
       .center {
         background-color: black;
@@ -42,30 +44,46 @@
         justify-content: center;
         align-items: center;
       }
-nav{
-    display: flex   ;justify-content: flex-start;align-items: center;
-}
-      nav ul{
+      nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      nav ul {
         height: 11vh;
         display: flex;
-justify-content: flex-start;
-align-items: center;
-    }
-      nav ul li{
-        list-style: none;padding: 0px 20px;
+        justify-content: flex-start;
+        align-items: center;
       }
-      nav ul li a{
+      nav ul li {
+        list-style: none;
+        padding: 0px 20px;
+        
+      }
+      nav ul li a {
         color: white;
         text-decoration: none;
+        padding:3.5vh ;
+        
       }
-      
+      nav ul li a:hover {
+        color: white;
+        background-color: green;
+        font-size: 1.1rem;  
+      }
+      .logo {
+        padding: 0px 30px;
+      }
+
     </style>
   </head>
   <body>
     <div class="progress"></div>
     <header>
       <nav>
-        <div class="logo"><img src="./logo.jpg" alt="logo" style="width: 30px;" ></div>
+        <div class="logo">
+          <img src="./logo.jpg" alt="logo" style="width: 30px" />
+        </div>
         <ul>
           <li><a href="#">home </a></li>
           <li><a href="#">about </a></li>
@@ -76,22 +94,25 @@ align-items: center;
       </nav>
     </header>
     <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at,
-        saepe deleniti facilis est atque nulla cum ut nobis? Magnam mollitia
-        consectetur aut totam ipsam rem odio eos omnis voluptatibus accusamus.
-        Aut eos minima veniam officiis perspiciatis praesentium, eum modi. Rem
-        vitae impedit cupiditate voluptas ex exercitationem minus illum sequi,
-        voluptate veritatis, dolorem rerum dicta cum molestiae, sit mollitia
-        excepturi corrupti suscipit officiis soluta repellat. Explicabo ea,
-        tempora quibusdam iusto reiciendis nihil repellat sint excepturi quia
-        laborum facere voluptatem nobis molestiae modi ex minus, doloremque
-        voluptas enim! Aut aliquid eius sequi quo voluptate exercitationem odio
-        corporis molestiae eum! Possimus amet aperiam alias similique velit unde
-        facilis quasi. Rerum corrupti consequatur, minus reiciendis maxime
-        deserunt enim obcaecati aliquam consectetur, repudiandae cumque?
-      </p>
-    </main>
+      <div class="cont">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          at, saepe deleniti facilis est atque nulla cum ut nobis? Magnam
+          mollitia consectetur aut totam ipsam rem odio eos omnis voluptatibus
+          accusamus. Aut eos minima veniam officiis perspiciatis praesentium,
+          eum modi. Rem vitae impedit cupiditate voluptas ex exercitationem
+          minus illum sequi, voluptate veritatis, dolorem rerum dicta cum
+          molestiae, sit mollitia excepturi corrupti suscipit officiis soluta
+          repellat. Explicabo ea, tempora quibusdam iusto reiciendis nihil
+          repellat sint excepturi quia laborum facere voluptatem nobis molestiae
+          modi ex minus, doloremque voluptas enim! Aut aliquid eius sequi quo
+          voluptate exercitationem odio corporis molestiae eum! Possimus amet
+          aperiam alias similique velit unde facilis quasi. Rerum corrupti
+          consequatur, minus reiciendis maxime deserunt enim obcaecati aliquam
+          consectetur, repudiandae cumque?
+        </p>
+      </div>
+      </main>
     <footer>
       <div class="center">
         <p>Copyright &copy; , All rights reserved</p>
