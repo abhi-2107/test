@@ -38,6 +38,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
+display: block;
 }
 
 /* styles for grid html */

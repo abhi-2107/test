@@ -22,8 +22,31 @@
       </ul>
     </nav>
     <main>
-      <div class="red"></div>
-      <div class="green"></div>
+ 
+      <div class="red"></div><div class="green"></div>
+      
+      <button onclick="document.location='https://cdn.thetealmango.com/wp-content/uploads/2022/02/Yael-Shelbia.jpg'" >click me to see a beautiful girl  </button>
+
+
+      <!-- image can be maped for rectangle , cirle,polygon and full image as default -->
+      <img src="./imgtest.jpg" alt="test for differrnt location click and get different result in same img" usemap="#workmap" style="width:300px;height: 400px;" >
+<map name="workmap">
+  <!-- coords matlab corrdinates left, pixels from top and so on -->
+  <area shape="rect" coords="50,100,250,300" href="https://www.google.com/search?q=beauty+girl&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj19JW56rT5AhU473MBHU_XDwgQ_AUoAXoECAEQAw&biw=1207&bih=558&dpr=1.13" alt="new page goes like this" target="_blank">
+</map>    
+
+<!-- normal browser mai gals vali dikhegi , fir 600-800px k bich mai logo and us se kam jane pe imagtest   -->
+    <picture>
+      <source media="(min-width:800px )" srcset="./gals.jpg" >
+      <source media="(min-width:600px )" srcset="./logo.jpg">
+<img src="./imgtest.jpg" style="width:auto"  >
+    </picture>
+    
+    
+    
+    
     </main>
+
+
   </body>
 </html>
