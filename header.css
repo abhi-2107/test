@@ -41,3 +41,10 @@ h1{
     color: black;
     font-style: italic;
 }
+.logo a{
+    padding:32px 8px 0px 8px;
+    
+}
+.logo a:hover{
+    background-color: wheat;
+}
