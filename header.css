@@ -48,3 +48,21 @@ h1{
 .logo a:hover{
     background-color: wheat;
 }
+
+
+.container{
+position: relative;
+}
+.items ul{
+    display: none;
+    position:absolute;
+}
+
+
+/* .items ul li a{
+    color: wheat;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+} */
+
